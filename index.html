@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 761px)" href="estilogrande.css">
+    <link rel="stylesheet" media="screen and (max-width: 760px)" href="estilomedio.css">
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="estilopequeno.css">
+    <title>CRGB</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <h1>Controle <span>R</span><span>G</span><span>B</span></h1>
+    </header>
+    <main>
+        <section id="controlecontainer">
+            <div id="controle">
+                <div id="botoescontainer">
+                    <button class="botao" id="luzmais" onclick="botaofuncao('luzmais')">+</button>
+                    <button class="botao" id="luzmenos" onclick="botaofuncao('luzmenos')">-</button>
+                    <button class="botao" id="off" onclick="botaofuncao('off')">OFF</button>
+                    <button class="botao" id="on" onclick="botaofuncao('on')">ON</button>
+                    <button class="botao" id="red1" onclick="botaofuncao('red1')">R</button>
+                    <button class="botao" id="green1" onclick="botaofuncao('green1')">G</button>
+                    <button class="botao" id="blue1" onclick="botaofuncao('blue1')">B</button>
+                    <button class="botao" id="white" onclick="botaofuncao('white')">W</button>
+                    <button class="botao" id="red2" onclick="botaofuncao('red2')"></button>
+                    <button class="botao" id="green2" onclick="botaofuncao('green2')"></button>
+                    <button class="botao" id="blue2" onclick="botaofuncao('blue2')"></button>
+                    <button class="botao" id="flash" onclick="botaofuncao('flash')"><span class="textobotao">FLASH</span></button>
+                    <button class="botao" id="red3" onclick="botaofuncao('red3')"></button>
+                    <button class="botao" id="green3" onclick="botaofuncao('green3')"></button>
+                    <button class="botao" id="blue3" onclick="botaofuncao('blue3')"></button>
+                    <button class="botao" id="strobe" onclick="botaofuncao('strobe')"><span class="textobotao">STROBE</span></button>
+                </div>
+            </div>
+        </section>
+        <section id="lampadacontainer">
+            <div id="lampada">
+                <div id="bulbo"></div>
+            </div>
+        </section>
+    </main>
+    <script src="codigo.js"></script>
+</body>
+</html>
